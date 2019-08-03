@@ -1,1 +1,1 @@
-# go_in_practice_code_snippets
+# "Go in Practice" book code snippets.
