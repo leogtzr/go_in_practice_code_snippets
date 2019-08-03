@@ -1,0 +1,14 @@
+- To test current package and nested packages:
+	```
+	go test ./...
+	```
+- How to get help about cgo and and C with go:
+	```
+	go help c
+	```
+	
+	```
+	go doc cgo
+	```
+
+
