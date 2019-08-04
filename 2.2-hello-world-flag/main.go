@@ -15,6 +15,13 @@ func init() {
 
 func main() {
 	flag.Parse()
+	flag.PrintDefaults()
+
+	flag.VisitAll(func(flag *flag.Flag) {
+		format := "\t-%s: %s (Default: '%s')\n"
+		fmt.Printf(format, flag.Name, flag.Usage, flag.DefValue)
+	})
+
 	if spanish == true {
 		fmt.Printf("Hola %s\n", *name)
 	} else {
